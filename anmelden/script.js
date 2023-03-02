@@ -5,6 +5,9 @@
 function redirect(){
     window.location.href="http://127.0.0.1:5500/home";
 }
+function redirect2(){
+  window.location.href="http://127.0.0.1:5500";
+}
 
 
 
@@ -25,6 +28,7 @@ function redirect(){
           if (resp[infoIndex].email == document.getElementById("input1").value && resp[infoIndex].password == document.getElementById("input2").value) {
             found = true;
             console.log("richtige login infos");
+            localStorage.setItem("emailyy", document.getElementById("input1").value);
             setTimeout(redirect, 1000);
             break;
           }

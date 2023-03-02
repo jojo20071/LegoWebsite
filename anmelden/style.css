@@ -30,6 +30,7 @@ body{
 
 }
 .input{
+    width: 250px;
     margin-top: 0px !important;
     margin-bottom: 30px !important;
     margin: auto;
