@@ -64,22 +64,6 @@ function registrieren () {
   xhr.addEventListener("readystatechange", function () {
     if (this.readyState === 4) {
       const resp = JSON.parse(this.responseText);
-      const Resplength = resp.length;
-      var found = false;
-      for (infoIndex = 0; infoIndex < Resplength; infoIndex++) {
-        if (resp[infoIndex].email == document.getElementById("input1").value) {
-          found = true;
-          console.log("Emaiol wurde schon verwendet");
-          alert("Email wurde schon verwendet, bitte melden sie sich an oder verwenden sie eine andere Email");
-          break;
-        }}
-      if (found == false) {
-        registrieren();
-        console.log("penis");
-      }
-
-
-
       console.log(resp);
 
     }
