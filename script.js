@@ -24,7 +24,7 @@ function registrieren () {
     console.log(password);
  
  
-    var myCorsApiKey = "8331064563d5e57c7c2b157d2061a03b325af";
+    var myCorsApiKey = "119f004d8ede59f884b15ab65d457f635bae0";
     var data = JSON.stringify({
      "email": email,
      "password": password
@@ -39,7 +39,7 @@ function registrieren () {
       }
     });
  
-    xhr.open("POST", "https://legoleague-54c5.restdb.io/rest/user-info");
+    xhr.open("POST", "https://www-legoleague-54c5.restdb.io/rest/user-info");
     xhr.setRequestHeader("content-type", "application/json");
     xhr.setRequestHeader("x-apikey", myCorsApiKey);
     xhr.setRequestHeader("cache-control", "no-cache");
@@ -55,7 +55,7 @@ function registrieren () {
  }
 
  function check () {
-  var myCorsApiKey = "6400a098bc22d22cf7b25b58";
+  var myCorsApiKey = "119f004d8ede59f884b15ab65d457f635bae0";
   var data = null;
 
   var xhr = new XMLHttpRequest();
@@ -75,12 +75,13 @@ function registrieren () {
         }}
       if (found == false) {
         registrieren();
+        console.log("penis");
       }
 
-        
-      
+
+
       console.log(resp);
-     
+
     }
   });
 
@@ -90,13 +91,13 @@ function registrieren () {
   xhr.setRequestHeader("cache-control", "no-cache");
 
   xhr.send(data);
-  
 
 
-  
-  
 
-  
 
-  
+
+
+
+
+
 }
