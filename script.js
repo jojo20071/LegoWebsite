@@ -13,7 +13,7 @@ function registrieren () {
     console.log(email);
  
  
-    var myCorsApiKey = "05df23edee638c40eb918e8bad12d3ca85948";
+    var myCorsApiKey = "8331064563d5e57c7c2b157d2061a03b325af";
     var data = JSON.stringify({
      "email": email,
      "password": password
