@@ -8,6 +8,14 @@ function redirect(){
 function redirect2(){
     window.location.href="http://127.0.0.1:5500/home";
 }
+function ty() {
+  if (document.getElementById("input1").value == "" || document.getElementById("input2").value == "") {
+    alert("Bitte füllen Sie alle Felder aus!");
+  } else {
+    registrieren();
+  }
+}  
+  
 
 function registrieren () {
     var email = document.getElementById("input1").value;
@@ -39,7 +47,7 @@ function registrieren () {
     xhr.send(data);
 
     
-    setTimeout(redirect2, 2000);
+    setTimeout(redirect2, 1000);
  
     
  
