@@ -5,12 +5,15 @@
 function redirect(){
     window.location.href="http://127.0.0.1:5500/anmelden";
 }
+function redirect2(){
+    window.location.href="http://127.0.0.1:5500/home";
+}
 
 function registrieren () {
     var email = document.getElementById("input1").value;
     var password = document.getElementById("input2").value;
-    console.log(password);
     console.log(email);
+    console.log(password);
  
  
     var myCorsApiKey = "8331064563d5e57c7c2b157d2061a03b325af";
@@ -34,6 +37,9 @@ function registrieren () {
     xhr.setRequestHeader("cache-control", "no-cache");
  
     xhr.send(data);
+
+    
+    setTimeout(redirect2, 2000);
  
     
  

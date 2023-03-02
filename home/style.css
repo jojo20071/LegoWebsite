@@ -1,0 +1,31 @@
+body{
+    background-color: #1F4E79;
+
+}
+.menu{
+    height: 50px;
+    width: 300px;
+    background-color: #3078BA;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 15px;
+    margin-top: 20px;
+
+}
+.logo{
+    position: relative;
+    top: -30px;
+    left: 15px;
+
+}
+.h2{
+    color: #8498AD;
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 80px;
+    font-size: 30px;
+    font-family: 'Comic Sans MS';
+    text-shadow: 2px 2px 8px rgb(0, 0, 0);
+    
+
+}
