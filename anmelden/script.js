@@ -13,6 +13,7 @@ function redirect2(){
 
 
  function anmelden () {
+  console.log("anmelden");
   var myCorsApiKey = "6400a098bc22d22cf7b25b58";
   var data = null;
 
@@ -23,6 +24,7 @@ function redirect2(){
     if (this.readyState === 4) {
         const resp = JSON.parse(this.responseText);
         const Resplength = resp.length;
+        console.log(Resplength);
         var found = false;
         for (infoIndex = 0; infoIndex < Resplength; infoIndex++) {
           if (resp[infoIndex].email == document.getElementById("input1").value && resp[infoIndex].password == document.getElementById("input2").value) {

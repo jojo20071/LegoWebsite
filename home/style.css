@@ -1,10 +1,15 @@
+@font-face {
+    font-family: 'Comic Sans MS';
+    src: url("/images/COMIC.TTF");
+  }
+
 body{
     background-color: #1F4E79;
 
 }
 .menu{
     height: 50px;
-    width: 300px;
+    width: 350px;
     background-color: #3078BA;
     margin: 0 auto;
     text-align: center;
@@ -28,4 +33,33 @@ body{
     text-shadow: 2px 2px 8px rgb(0, 0, 0);
     
 
+}
+.profile{
+    color: #8498AD;
+    font-size: 25px;
+    margin: 27px;
+    font-family: 'Comic Sans MS';
+    text-shadow: 2px 2px 8px rgb(0, 0, 0);
+}
+.line{
+    position: relative;
+    bottom: -400px;
+    height: 3px;
+    width: 345px;
+    background-color: #3078BA;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 15px;
+    
+}
+.add{
+    color: #8498AD;
+    position: relative;
+    bottom: -400px;
+    font-size: 20px;
+    margin: 27px;
+    margin-top: 20px;
+    font-family: 'Comic Sans MS';
+    text-shadow: 2px 2px 8px rgb(0, 0, 0);
+    pointer-events: none;
 }
