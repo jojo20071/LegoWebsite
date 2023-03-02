@@ -86,6 +86,7 @@ body{
     font-family: 'Comic Sans MS';
     color: #8498AD;
     text-shadow: 2px 2px 8px rgb(0, 0, 0);
+    pointer-events: none;
     
 }
 
@@ -109,5 +110,6 @@ body{
     top: 5px;
     font-family: 'Comic Sans MS';
     text-shadow: 2px 2px 8px rgb(0, 0, 0);
+    pointer-events: none;
     
 }
