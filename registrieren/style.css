@@ -1,0 +1,85 @@
+body{
+    background-color: #1F4E79;
+
+}
+.menu{
+    height: 50px;
+    width: 300px;
+    background-color: #3078BA;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 15px;
+
+}
+.logo{
+    position: relative;
+    top: -30px;
+    left: 15px;
+
+}
+.h2{
+    color: lightgrey;
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 80px;
+    font-size: 30px;
+    
+
+}
+.input{
+    margin: 100px;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    background: #3078BA;
+    
+    
+}
+#input2{
+    margin-bottom: 0px;
+}
+
+.vergessen{
+    text-align: center;
+    margin: 0px;
+    font-size: 12px;
+    position: relative;
+    bottom: -15px;
+    
+}
+
+.registrieren{
+    height: 40px;
+    width: 150px;
+    background-color: #3078BA;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 15px;
+    margin-top: 0px;
+    
+}
+.registrieren p{
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    top: 8px;
+    
+}
+
+.anmelden{
+    height: 40px;
+    width: 150px;
+    background-color: #3078BA;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 15px;
+    margin-top: 0px;
+    margin-bottom: 150px;
+    
+}
+.anmelden p{
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    top: 8px;
+    
+}
