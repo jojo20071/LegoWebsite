@@ -14,7 +14,7 @@ function redirect2(){
 
  function anmelden () {
   console.log("anmelden");
-  var myCorsApiKey = "6400a098bc22d22cf7b25b58";
+  var myCorsApiKey = "6401fcccbc22d22cf7b25bb4";
   var data = null;
 
   var xhr = new XMLHttpRequest();
@@ -46,7 +46,7 @@ function redirect2(){
     }
   });
 
-  xhr.open("GET", "https://legoleague-54c5.restdb.io/rest/user-info");
+  xhr.open("GET", "https://dblego-97ac.restdb.io/rest/lego");
   xhr.setRequestHeader("content-type", "application/json");
   xhr.setRequestHeader("x-apikey", myCorsApiKey);
   xhr.setRequestHeader("cache-control", "no-cache");

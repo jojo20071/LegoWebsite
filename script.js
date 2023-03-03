@@ -24,7 +24,7 @@ function registrieren () {
     console.log(password);
  
  
-    var myCorsApiKey = "119f004d8ede59f884b15ab65d457f635bae0";
+    var myCorsApiKey = "6401fcccbc22d22cf7b25bb4";
     var data = JSON.stringify({
      "email": email,
      "password": password
@@ -39,7 +39,7 @@ function registrieren () {
       }
     });
  
-    xhr.open("POST", "https://www-legoleague-54c5.restdb.io/rest/user-info");
+    xhr.open("POST", "https://dblego-97ac.restdb.io/rest/lego");
     xhr.setRequestHeader("content-type", "application/json");
     xhr.setRequestHeader("x-apikey", myCorsApiKey);
     xhr.setRequestHeader("cache-control", "no-cache");
@@ -55,7 +55,7 @@ function registrieren () {
  }
 
  function check () {
-  var myCorsApiKey = "119f004d8ede59f884b15ab65d457f635bae0";
+  var myCorsApiKey = "6401fcccbc22d22cf7b25bb4";
   var data = null;
 
   var xhr = new XMLHttpRequest();
@@ -64,12 +64,27 @@ function registrieren () {
   xhr.addEventListener("readystatechange", function () {
     if (this.readyState === 4) {
       const resp = JSON.parse(this.responseText);
+      const Resplength = resp.length;
+      var found = false;
+      for (infoIndex = 0; infoIndex < Resplength; infoIndex++) {
+        if (resp[infoIndex].email == document.getElementById("input1").value) {
+          found = true;
+          console.log("Emaiol wurde schon verwendet");
+          alert("Email wurde schon verwendet, bitte melden sie sich an oder verwenden sie eine andere Email");
+          break;
+        }}
+      if (found == false) {
+        registrieren();
+      }
+
+
+
       console.log(resp);
 
     }
   });
 
-  xhr.open("GET", "https://legoleague-54c5.restdb.io/rest/user-info");
+  xhr.open("GET", "https://dblego-97ac.restdb.io/rest/lego");
   xhr.setRequestHeader("content-type", "application/json");
   xhr.setRequestHeader("x-apikey", myCorsApiKey);
   xhr.setRequestHeader("cache-control", "no-cache");
