@@ -108,6 +108,7 @@ body{
     color: #8498AD;
     font-size: 25px;
     margin: 27px;
+    margin-left: 37px;
     font-family: 'Comic Sans MS';
     text-shadow: 2px 2px 8px rgb(0, 0, 0);
     position: relative;
@@ -166,30 +167,33 @@ body{
 }
 .manual{
     position: absolute;
+    width: 20px;
+    height: 20px;
+
 }
 #c1{
     top: 410px;
-    left: 60px;
+    left: 55px;
 }
 #c2{
     top: 410px;
-    left: 195px;
+    left: 190px;
 }
 #c3{
     top: 410px;
-    left: 335px;
+    left: 330px;
 }
 #c4{
     top: 570px;
-    left: 60px;
+    left: 55px;
 }
 #c5{
     top: 570px;
-    left: 195px;
+    left: 190px;
 }
 #c6{
     top: 570px;
-    left: 335px;
+    left: 330px;
 }
 
 .fertig{

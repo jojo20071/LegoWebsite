@@ -13,6 +13,7 @@ function ty() {
     alert("Bitte füllen Sie alle Felder aus!");
   } else {
     check();
+    console.log("not used");
   }
 }  
   
@@ -36,6 +37,11 @@ function registrieren () {
     xhr.addEventListener("readystatechange", function () {
       if (this.readyState === 4) {
         console.log(this.responseText);
+        console.log("neue daten gesended");
+        localStorage.setItem("emailyy", document.getElementById("input1").value);
+        console.log("email set");
+        setTimeout(redirect2, 100);
+        
       }
     });
  
@@ -45,9 +51,10 @@ function registrieren () {
     xhr.setRequestHeader("cache-control", "no-cache");
  
     xhr.send(data);
+    
 
     
-    setTimeout(redirect2, 1000);
+    
  
     
  
@@ -64,6 +71,7 @@ function registrieren () {
   xhr.addEventListener("readystatechange", function () {
     if (this.readyState === 4) {
       const resp = JSON.parse(this.responseText);
+      console.log("got the info");
       const Resplength = resp.length;
       var found = false;
       for (infoIndex = 0; infoIndex < Resplength; infoIndex++) {
@@ -74,7 +82,10 @@ function registrieren () {
           break;
         }}
       if (found == false) {
+        console.log("noch nicht verwendet");
         registrieren();
+        //localStorage.setItem("UserData", JSON.stringify(resp[resp.length]));
+        console.log("got info");
       }
 
 
