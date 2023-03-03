@@ -1,6 +1,4 @@
-//document.getElementById("name").innerHTML = document.getElementById("input1").value;
-//i have a text ith the id of "name" and i want to change the text to the value of the input with the id of "input1"
-
+let checkedBox = null;
 function changeText() {
     
     const name = document.getElementById("name");
@@ -13,6 +11,7 @@ function changeText() {
 
 $("input:checkbox").on('click', function() {
     var $box = $(this);
+    checkedBox = $box.attr("id");
     if ($box.is(":checked")) {
       var group = "input:checkbox[name='" + $box.attr("name") + "']";
       $(group).prop("checked", false);
@@ -20,4 +19,13 @@ $("input:checkbox").on('click', function() {
     } else {
       $box.prop("checked", false);
     }
+    console.log(checkedBox);
   });
+
+
+function submit() {
+  console.log(document.getElementById("input1").value);
+  console.log(checkedBox);
+  if (document.getElementById("input1").value == ""|| checkedBox == null) {
+    alert("Bitte Name und Foto Angeben");
+    } }

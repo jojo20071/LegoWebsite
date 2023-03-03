@@ -1,12 +1,12 @@
 function redirect(){
-    //window.location.href="http://127.0.0.1:5500/create";
+    window.location.href="http://127.0.0.1:5500/create";
 
 }
 function on(){
-    var xhr = new XMLHttpRequest();
-    xhr.open('GET', 'http://192.168.178.25/relay/0?turn=toggle');
-    xhr.send();
-    console.log("steckdose is an oder aus");
+    window.open("http://192.168.178.23/relay/0?turn=toggle", 'location=yes,height=570,width=520,scrollbars=yes,status=yes');
+    open("https://gogole.com");
+    return false;
+	console.log("on");
     
 }
 
@@ -31,7 +31,6 @@ function anmelden () {
               localStorage.setItem("UserData", JSON.stringify(resp[infoIndex]));
               found = true;
               console.log("richtige login infos");
-              setTimeout(redirect, 100);
               break;
             }
             }
