@@ -72,11 +72,37 @@ body{
     margin: 27px;
     margin-top: 10px;
 }
-
+.picframel{
+    background-color: #3078BA;
+    aspect-ratio: 1/1;
+    height: 70px;
+    border-radius: 15px;
+    margin: 27px;
+    
+    
+}
+.picframem{
+    background-color: #3078BA;
+    aspect-ratio: 1/1;
+    height: 70px;
+    border-radius: 15px;
+    margin: 27px;
+    margin-left: 162px;
+    }
+    .picframer{
+    background-color: #3078BA;
+    aspect-ratio: 1/1;
+    height: 70px;
+    border-radius: 15px;
+    margin: 27px;
+    margin-left: 300px;
+    
+}
 .img1{
+    width: 60px;
     position: relative  ;
-    top: -3px;
-    left: 2px;
+    top: 5px;
+    left: 5px;
 }
 .name{
     color: #8498AD;
@@ -87,4 +113,93 @@ body{
     position: relative;
     top: -80px;
     left: 100px;
+}
+
+.pep{
+    color: #8498AD;
+    font-size: 20px;
+    margin: 27px;
+    font-family: 'Comic Sans MS';
+    text-shadow: 2px 2px 8px rgb(0, 0, 0);
+    position: relative;
+    top: -70px;
+    left: 0px;
+}
+
+.input1{
+    width: 200px;
+    margin: auto;
+    display: block;
+    background-color: #3078BA;
+    padding: 12px;
+    border-radius: 12px;
+    border: 1.5px solid lightgrey;
+    outline: none;
+    font-family: 'Comic Sans MS';
+    position: relative;
+    top: -132px;
+    left: 50px;
+}
+
+#i1{
+    position: relative;
+    top: -120px;
+}
+#i2{
+    position: relative;
+    top: -217px;
+}
+#i3{
+    position: relative;
+    top: -314px;
+}
+#i4{
+    position: relative;
+    top: -250px;
+}#i5{
+    position: relative;
+    top: -347px;
+}
+#i6{
+    position: relative;
+    top: -445px;
+}
+.manual{
+    position: absolute;
+}
+#c1{
+    top: 410px;
+    left: 60px;
+}
+#c2{
+    top: 410px;
+    left: 195px;
+}
+#c3{
+    top: 410px;
+    left: 335px;
+}
+#c4{
+    top: 570px;
+    left: 60px;
+}
+#c5{
+    top: 570px;
+    left: 195px;
+}
+#c6{
+    top: 570px;
+    left: 335px;
+}
+
+.fertig{
+    position: relative;
+    bottom: 500px;
+    height: 50px;
+    width: 200px;
+    background-color: #3078BA;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 15px;
+    margin-top: 20px;
 }
