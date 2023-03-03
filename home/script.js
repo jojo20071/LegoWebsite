@@ -3,7 +3,7 @@ function redirect(){
 
 }
 function on(){
-    window.open("http://192.168.178.23/relay/0?turn=toggle", 'location=yes,height=570,width=520,scrollbars=yes,status=yes');
+    window.open("http://192.168.178.25/relay/0?turn=toggle", 'location=yes,scrollbars=yes,status=yes');
     open("https://gogole.com");
     return false;
 	console.log("on");
