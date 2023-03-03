@@ -14,7 +14,7 @@ function redirect2(){
 
  function anmelden () {
   console.log("anmelden");
-  var myCorsApiKey = "6401fcccbc22d22cf7b25bb4";
+  var myCorsApiKey = "64028499bc22d22cf7b25bcc";
   var data = null;
 
   var xhr = new XMLHttpRequest();
@@ -46,7 +46,7 @@ function redirect2(){
     }
   });
 
-  xhr.open("GET", "https://dblego-97ac.restdb.io/rest/lego");
+  xhr.open("GET", "https://lego2-4cbb.restdb.io/rest/lego");
   xhr.setRequestHeader("content-type", "application/json");
   xhr.setRequestHeader("x-apikey", myCorsApiKey);
   xhr.setRequestHeader("cache-control", "no-cache");

@@ -25,10 +25,10 @@ function registrieren () {
     console.log(password);
  
  
-    var myCorsApiKey = "6401fcccbc22d22cf7b25bb4";
+    var myCorsApiKey = "64028499bc22d22cf7b25bcc";
     var data = JSON.stringify({
      "email": email,
-     "password": password
+     "password": password,
     });
  
     var xhr = new XMLHttpRequest();
@@ -45,7 +45,7 @@ function registrieren () {
       }
     });
  
-    xhr.open("POST", "https://dblego-97ac.restdb.io/rest/lego");
+    xhr.open("POST", "https://lego2-4cbb.restdb.io/rest/lego");
     xhr.setRequestHeader("content-type", "application/json");
     xhr.setRequestHeader("x-apikey", myCorsApiKey);
     xhr.setRequestHeader("cache-control", "no-cache");
@@ -62,7 +62,7 @@ function registrieren () {
  }
 
  function check () {
-  var myCorsApiKey = "6401fcccbc22d22cf7b25bb4";
+  var myCorsApiKey = "64028499bc22d22cf7b25bcc";
   var data = null;
 
   var xhr = new XMLHttpRequest();
@@ -95,7 +95,7 @@ function registrieren () {
     }
   });
 
-  xhr.open("GET", "https://dblego-97ac.restdb.io/rest/lego");
+  xhr.open("GET", "https://lego2-4cbb.restdb.io/rest/lego");
   xhr.setRequestHeader("content-type", "application/json");
   xhr.setRequestHeader("x-apikey", myCorsApiKey);
   xhr.setRequestHeader("cache-control", "no-cache");

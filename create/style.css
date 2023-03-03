@@ -102,8 +102,18 @@ body{
     width: 60px;
     position: relative  ;
     top: 5px;
+    left: 5px;}
+
+
+#previewProfile{
+    width: 60px;
+    position: relative  ;
+    top: 5px;
     left: 5px;
+    src: "/images/p1.png";
+
 }
+
 .name{
     color: #8498AD;
     font-size: 25px;
@@ -171,27 +181,27 @@ body{
     height: 20px;
 
 }
-#c1{
+#p1{
     top: 410px;
     left: 55px;
 }
-#c2{
+#p2{
     top: 410px;
     left: 190px;
 }
-#c3{
+#p3{
     top: 410px;
     left: 330px;
 }
-#c4{
+#p4{
     top: 570px;
     left: 55px;
 }
-#c5{
+#p5{
     top: 570px;
     left: 190px;
 }
-#c6{
+#p6{
     top: 570px;
     left: 330px;
 }

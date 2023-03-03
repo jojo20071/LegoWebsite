@@ -1,5 +1,8 @@
 function redirect(){
+  if(localStorage.getItem('UserAc3') == "undefined"){
     window.location.href="http://127.0.0.1:5500/create";
+  }
+    
 
 }
 function on(){
@@ -10,11 +13,16 @@ function on(){
     
 }
 
-document.getElementById("info").innerHTML = localStorage.getItem('emailyy');;
 anmelden();
+if (localStorage.getItem('ac1') == "undefined"){
+  console.log("ac1 is exist");
+  document.getElementById("hide1").style.left = "0px";
+  document.getElementById("hide2").style.left = "0px";
+}
+    
 
 function anmelden () {
-    var myCorsApiKey = "6401fcccbc22d22cf7b25bb4";
+    var myCorsApiKey = "64028499bc22d22cf7b25bcc";
     var data = null;
   
     var xhr = new XMLHttpRequest();
@@ -28,7 +36,11 @@ function anmelden () {
           var found = false;
           for (infoIndex = 0; infoIndex < Resplength; infoIndex++) {
             if (resp[infoIndex].email == localStorage.getItem('emailyy')){
-              localStorage.setItem("UserData", JSON.stringify(resp[infoIndex]));
+              localStorage.setItem("UserID", resp[infoIndex]._id);
+              localStorage.setItem("UserAc1", resp[infoIndex].ac1);
+              localStorage.setItem("UserAc2", resp[infoIndex].ac2);
+              localStorage.setItem("UserAc3", resp[infoIndex].ac3);
+              
               found = true;
               console.log("richtige login infos");
               break;
@@ -39,7 +51,7 @@ function anmelden () {
           }
       }
     });
-    xhr.open("GET", "https://dblego-97ac.restdb.io/rest/lego");
+    xhr.open("GET", "https://lego2-4cbb.restdb.io/rest/lego");
     xhr.setRequestHeader("content-type", "application/json");
     xhr.setRequestHeader("x-apikey", myCorsApiKey);
     xhr.setRequestHeader("cache-control", "no-cache");

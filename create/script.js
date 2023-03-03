@@ -1,4 +1,3 @@
-let checkedBox = null;
 function changeText() {
     
     const name = document.getElementById("name");
@@ -10,22 +9,157 @@ function changeText() {
     name.textContent = input1.value;}}
 
 $("input:checkbox").on('click', function() {
+    
     var $box = $(this);
+    console.log($box);
     checkedBox = $box.attr("id");
+    document.getElementById("previewProfile").src = "/images/" + checkedBox + ".png";
+    console.log("images/" + checkedBox + ".png");
     if ($box.is(":checked")) {
       var group = "input:checkbox[name='" + $box.attr("name") + "']";
       $(group).prop("checked", false);
       $box.prop("checked", true);
     } else {
-      $box.prop("checked", false);
+      $box.prop("checked", true);
     }
     console.log(checkedBox);
   });
 
+function submit2() {
+  memberId = Math.floor(Math.random() * 10000);
+  console.log(memberId);
+  console.log(localStorage.getItem('UserID'));
+  if (localStorage.getItem('UserAc1') == "undefined") {
+    updateMemberInfo1(memberId);
+    postMemberInfo(checkedBox, document.getElementById("input1").value, memberId, localStorage.getItem('UserID'));
+  }
+  else {
+    if(localStorage.getItem('UserAc2') == "undefined"){
+      updateMemberInfo2(memberId);
+      postMemberInfo(checkedBox, document.getElementById("input1").value, memberId, localStorage.getItem('UserID'));
+    }
+    else {
+      if(localStorage.getItem('UserAc3') == "undefined"){
+        updateMemberInfo3(memberId);
+        postMemberInfo(checkedBox, document.getElementById("input1").value, memberId, localStorage.getItem('UserID'));
+      }
+      else {
+        console.log("Keine Plätze mehr frei");
+        window.location.href="http://127.0.0.1:5500/home";
+      }
+    }}
+    
+
+  
+
+
+
+    
+}
 
 function submit() {
   console.log(document.getElementById("input1").value);
-  console.log(checkedBox);
-  if (document.getElementById("input1").value == ""|| checkedBox == null) {
-    alert("Bitte Name und Foto Angeben");
-    } }
+  if (document.getElementById("input1").value == "") {
+    alert("Bitte Name Angeben");
+    }
+  else { 
+    console.log("not used");
+    submit2()
+    
+  }
+
+}
+
+
+function updateMemberInfo1 (info) {
+  var myCorsApiKey = "6401fcccbc22d22cf7b25bb4";
+  var data = JSON.stringify({
+    "ac1": info
+  });
+  var xhr = new XMLHttpRequest();
+  xhr.withCredentials = false;
+  xhr.addEventListener("readystatechange", function () {
+    if (this.readyState === 4) {
+      console.log(this.responseText);
+      //window.location.href="http://127.0.0.1:5500/home";
+    }
+  });
+
+  xhr.open("PATCH", "https://lego2-4cbb.restdb.io/rest/lego/" + localStorage.getItem('UserID'));
+  xhr.setRequestHeader("content-type", "application/json");
+  xhr.setRequestHeader("x-apikey", myCorsApiKey);
+  xhr.setRequestHeader("cache-control", "no-cache");
+
+  xhr.send(data);
+}
+function updateMemberInfo2 (info) {
+  var myCorsApiKey = "6401fcccbc22d22cf7b25bb4";
+  var data = JSON.stringify({
+    "ac2": info
+  });
+  var xhr = new XMLHttpRequest();
+  xhr.withCredentials = false;
+  xhr.addEventListener("readystatechange", function () {
+    if (this.readyState === 4) {
+      console.log(this.responseText);
+      window.location.href="http://127.0.0.1:5500/home";
+    }
+  });
+
+  xhr.open("PATCH", "https://lego2-4cbb.restdb.io/rest/lego/" + localStorage.getItem('UserID'));
+  xhr.setRequestHeader("content-type", "application/json");
+  xhr.setRequestHeader("x-apikey", myCorsApiKey);
+  xhr.setRequestHeader("cache-control", "no-cache");
+
+  xhr.send(data);
+}
+function updateMemberInfo3 (info) {
+  var myCorsApiKey = "6401fcccbc22d22cf7b25bb4";
+  var data = JSON.stringify({
+    "ac3": info
+  });
+  var xhr = new XMLHttpRequest();
+  xhr.withCredentials = false;
+  xhr.addEventListener("readystatechange", function () {
+    if (this.readyState === 4) {
+      console.log(this.responseText);
+      window.location.href="http://127.0.0.1:5500/home";
+    }
+  });
+
+  xhr.open("PATCH", "https://lego2-4cbb.restdb.io/rest/lego/" + localStorage.getItem('UserID'));
+  xhr.setRequestHeader("content-type", "application/json");
+  xhr.setRequestHeader("x-apikey", myCorsApiKey);
+  xhr.setRequestHeader("cache-control", "no-cache");
+
+  xhr.send(data);
+}
+
+
+function postMemberInfo (image_id, name, member_id, profile_id) {
+  console.log("updatingOnMemberInfo");
+  var myCorsApiKey = "64028499bc22d22cf7b25bcc";
+  var data = JSON.stringify({
+    "image_id": image_id,
+    "name": name,
+    "member_id": member_id,
+    "profile_id": profile_id
+    
+
+  });
+  var xhr = new XMLHttpRequest();
+  xhr.withCredentials = false;
+  xhr.addEventListener("readystatechange", function () {
+    if (this.readyState === 4) {
+      console.log(this.responseText);
+      window.location.href="http://127.0.0.1:5500/home";
+    }
+  });
+
+  xhr.open("POST", "https://lego2-4cbb.restdb.io/rest/members");
+  xhr.setRequestHeader("content-type", "application/json");
+  xhr.setRequestHeader("x-apikey", myCorsApiKey);
+  xhr.setRequestHeader("cache-control", "no-cache");
+
+  xhr.send(data);
+}

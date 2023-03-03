@@ -63,3 +63,60 @@ body{
     text-shadow: 2px 2px 8px rgb(0, 0, 0);
     
 }
+
+.picframe{
+    background-color: #3078BA;
+    aspect-ratio: 1/1;
+    height: 70px;
+    border-radius: 15px;
+    margin: 27px;
+    margin-top: 35px;
+    margin-bottom: -30px;
+    
+    position: relative;
+    top: -80px;
+}
+
+.img1{
+    width: 60px;
+    position: relative;
+    top: 5px;
+    left: 5px;}
+
+.profile2{
+        color: #8498AD;
+        font-size: 25px;
+        margin: 27px;
+        font-family: 'Comic Sans MS';
+        text-shadow: 2px 2px 8px rgb(0, 0, 0);
+        position: relative;
+        top: -130px;
+        left: 110px;
+    }
+#hide1{
+    left: 111110px;
+}
+#hide2{
+    left: 111110px;
+}
+#hide3{
+    left: 111110px;
+}
+#hide4{
+    left: 111110px;
+}
+#hide5{
+    left: 111110px;
+}
+#hide6{
+    left: 111110px;
+}
+#hide7{
+    left: 111110px;
+}
+#hide8{
+    left: 111110px;
+}
+#hide9{
+    left: 111110px;
+}
