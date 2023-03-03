@@ -4,6 +4,7 @@ function on(){
     var xhr = new XMLHttpRequest();
     xhr.open('GET', 'http://192.168.178.23/relay/0?turn=toggle');
     xhr.send();
+    console.log("steckdose is an oder aus");
     
 }
 
