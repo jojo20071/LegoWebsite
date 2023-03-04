@@ -47,7 +47,7 @@ function submit2() {
         postMemberInfo(checkedBox, document.getElementById("input1").value, memberId, localStorage.getItem('UserID'));
       }
       else {
-        console.log("Keine Plätze mehr frei");
+        console.log("Keine Plätze mehr freiiiiiii");
         window.location.href="http://127.0.0.1:5500/home";
       }
     }}
@@ -106,7 +106,7 @@ function updateMemberInfo2 (info) {
   xhr.addEventListener("readystatechange", function () {
     if (this.readyState === 4) {
       console.log(this.responseText);
-      window.location.href="http://127.0.0.1:5500/home";
+      //window.location.href="http://127.0.0.1:5500/home";
       localStorage.setItem("UserAc2", info);
     }
   });
@@ -128,7 +128,7 @@ function updateMemberInfo3 (info) {
   xhr.addEventListener("readystatechange", function () {
     if (this.readyState === 4) {
       console.log(this.responseText);
-      window.location.href="http://127.0.0.1:5500/home";
+      //window.location.href="http://127.0.0.1:5500/home";
       localStorage.setItem("UserAc3", info);
     }
   });
