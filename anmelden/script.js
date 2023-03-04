@@ -14,7 +14,7 @@ function redirect2(){
 
  function anmelden () {
   console.log("anmelden");
-  var myCorsApiKey = "64028499bc22d22cf7b25bcc";
+  var myCorsApiKey = "64033cccbc22d22cf7b25be5";
   var data = null;
 
   var xhr = new XMLHttpRequest();
@@ -30,6 +30,7 @@ function redirect2(){
           if (resp[infoIndex].email == document.getElementById("input1").value && resp[infoIndex].password == document.getElementById("input2").value) {
             found = true;
             console.log("richtige login infos");
+            window.localStorage.clear();
             localStorage.setItem("emailyy", document.getElementById("input1").value);
             setTimeout(redirect, 1000);
             break;
@@ -46,7 +47,7 @@ function redirect2(){
     }
   });
 
-  xhr.open("GET", "https://lego2-4cbb.restdb.io/rest/lego");
+  xhr.open("GET", "https://lego3-71bb.restdb.io/rest/lego");
   xhr.setRequestHeader("content-type", "application/json");
   xhr.setRequestHeader("x-apikey", myCorsApiKey);
   xhr.setRequestHeader("cache-control", "no-cache");
