@@ -149,12 +149,18 @@ function anmelden () {
 
 function log1(){
   console.log("log1");
-  localStorage.setItem('loged_member', localStorage.getItem("id member 1"));}
+  localStorage.setItem('loged_member', localStorage.getItem("id member 1"));
+  localStorage.setItem('loged_member_icon', localStorage.getItem("image_id member 1"));
+  localStorage.setItem('loged_member_name', localStorage.getItem("name member 1"));}
 function log2(){
   console.log("log2");
-  localStorage.setItem('loged_member', localStorage.getItem("id member 2"));}
+  localStorage.setItem('loged_member', localStorage.getItem("id member 2"));
+  localStorage.setItem('loged_member_icon', localStorage.getItem("image_id member 2"));
+  localStorage.setItem('loged_member_name', localStorage.getItem("name member 2"));}
 function log3(){
   console.log("log3");
-  localStorage.setItem('loged_member', localStorage.getItem("id member 3"));}
+  localStorage.setItem('loged_member', localStorage.getItem("id member 3"));
+  localStorage.setItem('loged_member_icon', localStorage.getItem("image_id member 3"));
+  localStorage.setItem('loged_member_name', localStorage.getItem("name member 3"));}
 
 
