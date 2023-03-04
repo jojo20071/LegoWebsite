@@ -22,6 +22,7 @@ function changeColor() {
         document.getElementById("gerät1").style.backgroundColor = "#21364A";
         document.getElementById("k1").style.marginLeft = "3px";
         state1 = false;
+        location.assign("http://192.168.178.23/relay/0?turn=toggle");
     }
     
 
@@ -32,11 +33,21 @@ function changeColor2() {
         document.getElementById("gerät2").style.backgroundColor = "#3078BA";
         document.getElementById("k2").style.marginLeft = "30px";
         state2 = true;
+        location.assign("http://192.168.178.23/relay/0?turn=toggle");
     } else {
         document.getElementById("gerät2").style.backgroundColor = "#21364A";
         document.getElementById("k2").style.marginLeft = "3px";
         state2 = false;
+        location.assign("http://192.168.178.23/relay/0?turn=toggle");
     }
     
 
 }
+
+
+function redSetting(){
+    window.location.href="http://127.0.0.1:5500/anmelden";}
+
+function redMenu(){
+        window.location.href="http://127.0.0.1:5500/anmelden";}
+    

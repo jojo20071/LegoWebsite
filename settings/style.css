@@ -9,25 +9,25 @@ body{
 }
 
 .gerät1{
-    height: 70px;
+    height: 170px;
     width: 350px;
-    background-color: #21364A;
+    background-color: #3078BA;
     margin: 0 auto;
     text-align: center;
     border-radius: 15px;
-    margin-top: 0px;
+    margin-top: -50px;
 
     margin-bottom: 20px;
 
 }
 .gerät3{
     height: 70px;
-    width: 350px;
+    width: 70px;
     background-color: #3078BA;
-    margin: 0 auto;
+    margin: 27px;
     text-align: center;
     border-radius: 15px;
-    margin-top: 320px;
+    margin-top: 90px;
 
 
     margin-bottom: 20px;
@@ -100,16 +100,18 @@ body{
 .h4{
     color: #8498AD;
     margin: 27px;
-    margin-top: 30px;
+    margin-top: 10px;
     margin-bottom: 20px;
     font-size: 20px;
     font-family: 'Comic Sans MS';
     text-shadow: 2px 2px 8px rgb(0, 0, 0);
     position: absolute;
-    bottom : 90px;
+    left:10px;
     
 
 }
+
+
 
 #kreis1{
     height: 50px;
@@ -120,7 +122,7 @@ body{
     border-radius: 50%;
     margin-top: 10px;
     margin-left: 0px;
-    left: 42px;
+    left: 44px;
 }
 #port{
     position: relative;
@@ -134,7 +136,7 @@ body{
 }
 #lamp{
     position: relative;
-    top: 7px;
+    top: 5px;
     height: 40px;
     -webkit-user-drag: none;
     user-select: none;
@@ -179,3 +181,29 @@ body{
     
 
 }
+#shift{
+    position: relative;
+    top: -60px;
+    left: 270px;
+}
+#shift2{
+    position: relative;
+    left: 50px;
+    top: 20px;
+    width: 200px;
+}
+.h9{
+    color: #8498AD;
+    margin: 27px;
+    position: relative;
+    top: 30px;
+    margin-top: 20px;
+    margin-bottom: 45px;
+    font-size: 20px;
+    font-family: 'Comic Sans MS';
+    text-shadow: 2px 2px 8px rgb(0, 0, 0);
+    text-align: left;
+    
+
+}
+

@@ -3,10 +3,10 @@
 //3. Optional: put the register button on bottom -20px
 
 function redirect(){
-    window.location.href="https://peaceful-lolly-588c32.netlify.app/home";
+    window.location.href="http://127.0.0.1:5500/home";
 }
 function redirect2(){
-  window.location.href="https://peaceful-lolly-588c32.netlify.app/";
+  window.location.href="http://127.0.0.1:5500/";
 }
 
 
