@@ -48,7 +48,7 @@ function submit2() {
       }
       else {
         console.log("Keine Plätze mehr freiiiiiii");
-        window.location.href="http://127.0.0.1:5500/home";
+        window.location.href="https://peaceful-lolly-588c32.netlify.app/home";
       }
     }}
     
@@ -158,7 +158,7 @@ function postMemberInfo (image_id, name, member_id, profile_id) {
   xhr.addEventListener("readystatechange", function () {
     if (this.readyState === 4) {
       console.log(this.responseText);
-      window.location.href="http://127.0.0.1:5500/home";
+      window.location.href="https://peaceful-lolly-588c32.netlify.app/home";
       
     }
   });

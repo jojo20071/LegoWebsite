@@ -13,6 +13,7 @@ function changeColor() {
         document.getElementById("k1").style.marginLeft = "30px";
         state1 = true;
         location.assign("http://192.168.178.23/relay/0?turn=toggle");
+        //run code after 1 sekond
 
 
 
