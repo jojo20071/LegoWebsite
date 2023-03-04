@@ -19,3 +19,7 @@ function redSetting(){
 
 function backHome(){
             window.location.href="http://127.0.0.1:5500/mainpage";}
+function redirectAbmelden(){
+                window.location.href="http://127.0.0.1:5500/anmelden";}
+function redirectChangeProfile(){
+    window.location.href="http://127.0.0.1:5500/home";}

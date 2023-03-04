@@ -59,7 +59,7 @@ else{
     
 
 function anmelden () {
-    var myCorsApiKey = "64033cccbc22d22cf7b25be5";
+    var myCorsApiKey = "6403d203bc22d22cf7b25bfb";
     var data = null;
   
     var xhr = new XMLHttpRequest();
@@ -99,7 +99,7 @@ function anmelden () {
           }
       }
     });
-    xhr.open("GET", "https://lego3-71bb.restdb.io/rest/lego");
+    xhr.open("GET", "https://lego4-1196.restdb.io/rest/lego");
     xhr.setRequestHeader("content-type", "application/json");
     xhr.setRequestHeader("x-apikey", myCorsApiKey);
     xhr.setRequestHeader("cache-control", "no-cache");
@@ -110,7 +110,7 @@ function anmelden () {
 
 
   function getMemberInfo (member_id_search,member_number) {
-    var myCorsApiKey = "64033cccbc22d22cf7b25be5";
+    var myCorsApiKey = "6403d203bc22d22cf7b25bfb";
     var data = null;
   
     var xhr = new XMLHttpRequest();
@@ -138,7 +138,7 @@ function anmelden () {
           }
       }
     });
-    xhr.open("GET", "https://lego3-71bb.restdb.io/rest/members");
+    xhr.open("GET", "https://lego4-1196.restdb.io/rest/members");
     xhr.setRequestHeader("content-type", "application/json");
     xhr.setRequestHeader("x-apikey", myCorsApiKey);
     xhr.setRequestHeader("cache-control", "no-cache");
@@ -167,5 +167,6 @@ function log3(){
   localStorage.setItem('loged_member_icon', localStorage.getItem("image_id member 3"));
   localStorage.setItem('loged_member_name', localStorage.getItem("name member 3"));
   window.location.href="http://127.0.0.1:5500/mainpage";}
+
 
 

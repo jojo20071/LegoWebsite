@@ -45,9 +45,10 @@ function changeColor2() {
 }
 
 
-function redSetting(){
-    window.location.href="http://127.0.0.1:5500/anmelden";}
-
 function redMenu(){
-        window.location.href="http://127.0.0.1:5500/anmelden";}
-    
+    window.location.href="http://127.0.0.1:5500/settings";}
+
+function redSetting(){
+        window.location.href="http://127.0.0.1:5500/membersettings";}
+function backHome(){
+        window.location.href="http://127.0.0.1:5500/mainpage";}

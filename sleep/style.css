@@ -33,19 +33,7 @@ body{
     margin-bottom: 20px;
 
 }
-.gerät9{
-    height: 70px;
-    width: 70px;
-    background-color: #3078BA;
-    margin: 27px;
-    text-align: center;
-    border-radius: 15px;
-    margin-top: 900px;
 
-
-    margin-bottom: 20px;
-
-}
 .menu{
     height: 50px;
     width: 170px;
@@ -112,26 +100,12 @@ body{
 .h4{
     color: #8498AD;
     margin: 27px;
-    margin-top: 10px;
-    margin-bottom: 20px;
+    margin-top: 0px;
+    margin-bottom: -70px;
     font-size: 20px;
     font-family: 'Comic Sans MS';
     text-shadow: 2px 2px 8px rgb(0, 0, 0);
-    position: absolute;
-    left:10px;
-    
-
-}
-.h12{
-    color: #8498AD;
-    margin: 27px;
-    margin-top: 10px;
-    margin-bottom: 0px;
-    font-size: 15px;
-    font-family: 'Comic Sans MS';
-    text-shadow: 2px 2px 8px rgb(0, 0, 0);
-    position: absolute;
-    left:10px;
+    margin-top: -20px;
     
 
 }
@@ -216,6 +190,14 @@ body{
     left: 50px;
     top: 20px;
     width: 200px;
+}
+#shift3{
+    position: absolute;
+    left: 10px;
+    top: 270px;
+    width: 500px;
+    font-size: 15px;
+    color: red;
 }
 .h9{
     color: #8498AD;

@@ -9,7 +9,7 @@ body{
 }
 
 .gerät1{
-    height: 170px;
+    height: 380px;
     width: 350px;
     background-color: #3078BA;
     margin: 0 auto;
@@ -33,19 +33,7 @@ body{
     margin-bottom: 20px;
 
 }
-.gerät9{
-    height: 70px;
-    width: 70px;
-    background-color: #3078BA;
-    margin: 27px;
-    text-align: center;
-    border-radius: 15px;
-    margin-top: 900px;
 
-
-    margin-bottom: 20px;
-
-}
 .menu{
     height: 50px;
     width: 170px;
@@ -115,19 +103,6 @@ body{
     margin-top: 10px;
     margin-bottom: 20px;
     font-size: 20px;
-    font-family: 'Comic Sans MS';
-    text-shadow: 2px 2px 8px rgb(0, 0, 0);
-    position: absolute;
-    left:10px;
-    
-
-}
-.h12{
-    color: #8498AD;
-    margin: 27px;
-    margin-top: 10px;
-    margin-bottom: 0px;
-    font-size: 15px;
     font-family: 'Comic Sans MS';
     text-shadow: 2px 2px 8px rgb(0, 0, 0);
     position: absolute;
@@ -231,4 +206,6 @@ body{
     
 
 }
-
+#red{
+    color: red !important;
+}

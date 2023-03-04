@@ -75,7 +75,7 @@ function submit() {
 
 
 function updateMemberInfo1 (info) {
-  var myCorsApiKey = "64033cccbc22d22cf7b25be5";
+  var myCorsApiKey = "6403d203bc22d22cf7b25bfb";
   var data = JSON.stringify({
     "ac1": info
   });
@@ -89,7 +89,7 @@ function updateMemberInfo1 (info) {
     }
   });
 
-  xhr.open("PATCH", "https://lego3-71bb.restdb.io/rest/lego/" + localStorage.getItem('UserID'));
+  xhr.open("PATCH", "https://lego4-1196.restdb.io/rest/lego/" + localStorage.getItem('UserID'));
   xhr.setRequestHeader("content-type", "application/json");
   xhr.setRequestHeader("x-apikey", myCorsApiKey);
   xhr.setRequestHeader("cache-control", "no-cache");
@@ -97,7 +97,7 @@ function updateMemberInfo1 (info) {
   xhr.send(data);
 }
 function updateMemberInfo2 (info) {
-  var myCorsApiKey = "64033cccbc22d22cf7b25be5";
+  var myCorsApiKey = "6403d203bc22d22cf7b25bfb";
   var data = JSON.stringify({
     "ac2": info
   });
@@ -111,7 +111,7 @@ function updateMemberInfo2 (info) {
     }
   });
 
-  xhr.open("PATCH", "https://lego3-71bb.restdb.io/rest/lego/" + localStorage.getItem('UserID'));
+  xhr.open("PATCH", "https://lego4-1196.restdb.io/rest/lego/" + localStorage.getItem('UserID'));
   xhr.setRequestHeader("content-type", "application/json");
   xhr.setRequestHeader("x-apikey", myCorsApiKey);
   xhr.setRequestHeader("cache-control", "no-cache");
@@ -119,7 +119,7 @@ function updateMemberInfo2 (info) {
   xhr.send(data);
 }
 function updateMemberInfo3 (info) {
-  var myCorsApiKey = "64033cccbc22d22cf7b25be5";
+  var myCorsApiKey = "6403d203bc22d22cf7b25bfb";
   var data = JSON.stringify({
     "ac3": info
   });
@@ -133,7 +133,7 @@ function updateMemberInfo3 (info) {
     }
   });
 
-  xhr.open("PATCH", "https://lego3-71bb.restdb.io/rest/lego/" + localStorage.getItem('UserID'));
+  xhr.open("PATCH", "https://lego4-1196.restdb.io/rest/lego/" + localStorage.getItem('UserID'));
   xhr.setRequestHeader("content-type", "application/json");
   xhr.setRequestHeader("x-apikey", myCorsApiKey);
   xhr.setRequestHeader("cache-control", "no-cache");
@@ -144,7 +144,7 @@ function updateMemberInfo3 (info) {
 
 function postMemberInfo (image_id, name, member_id, profile_id) {
   console.log("updatingOnMemberInfo");
-  var myCorsApiKey = "64033cccbc22d22cf7b25be5";
+  var myCorsApiKey = "6403d203bc22d22cf7b25bfb";
   var data = JSON.stringify({
     "image_id": image_id,
     "name": name,
@@ -163,7 +163,7 @@ function postMemberInfo (image_id, name, member_id, profile_id) {
     }
   });
 
-  xhr.open("POST", "https://lego3-71bb.restdb.io/rest/members");
+  xhr.open("POST", "https://lego4-1196.restdb.io/rest/members");
   xhr.setRequestHeader("content-type", "application/json");
   xhr.setRequestHeader("x-apikey", myCorsApiKey);
   xhr.setRequestHeader("cache-control", "no-cache");
