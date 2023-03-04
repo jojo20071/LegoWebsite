@@ -7,9 +7,23 @@ body{
     background-color: #1F4E79;
 
 }
+
+.gerät1{
+    height: 70px;
+    width: 350px;
+    background-color: #21364A;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 15px;
+    margin-top: 0px;
+
+    margin-bottom: 20px;
+
+}
+
 .menu{
     height: 50px;
-    width: 200px;
+    width: 170px;
     background-color: #3078BA;
     margin: 0 auto;
     text-align: center;
@@ -33,14 +47,14 @@ body{
     margin: 27px;
     position: absolute;
     border-radius: 15px;
-    margin-top: 0px;
     margin-left: 330px;
     margin-top: -50px;
+    left: 0px;
 }
 .logo{
     position: relative;
     top: -30px;
-    left: 15px;
+    left: 0px;
 
 }
 .logo_menu{
@@ -61,12 +75,68 @@ body{
 
 .h2{
     color: #8498AD;
-    text-align: center;
-    margin-top: 150px;
-    margin-bottom: 80px;
-    font-size: 30px;
+    margin: 27px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 20px;
     font-family: 'Comic Sans MS';
     text-shadow: 2px 2px 8px rgb(0, 0, 0);
     
 
+}
+
+#kreis1{
+    height: 50px;
+    width: 50px;
+    background-color: #8498AD;
+    margin: 27px;
+    position: absolute;
+    border-radius: 50%;
+    margin-top: 10px;
+    margin-left: 0px;
+    left: 42px;
+}
+#port{
+    position: relative;
+    top: 10px;
+    height: 30px;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+#lamp{
+    position: relative;
+    top: 7px;
+    height: 40px;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.gk{
+    height: 25px;
+    width: 55px;
+    background-color: #8498AD;
+    margin: 27px;
+    position: absolute;
+    border-radius: 50px;
+    margin-top: 23px;
+    margin-left: 0px;
+    left: 300px;
+}
+
+.kk{
+    height: 21px;
+    width: 21px;
+    background-color: #1F4E79;
+    margin: 27px;
+    position: absolute;
+    border-radius: 50%;
+    margin-top: 2px;
+    margin-left: 3px;
+    transition: 0.1s;
 }

@@ -151,16 +151,21 @@ function log1(){
   console.log("log1");
   localStorage.setItem('loged_member', localStorage.getItem("id member 1"));
   localStorage.setItem('loged_member_icon', localStorage.getItem("image_id member 1"));
-  localStorage.setItem('loged_member_name', localStorage.getItem("name member 1"));}
+  localStorage.setItem('loged_member_name', localStorage.getItem("name member 1"));
+  window.location.href="http://127.0.0.1:5500/mainpage";
+
+  }
 function log2(){
   console.log("log2");
   localStorage.setItem('loged_member', localStorage.getItem("id member 2"));
   localStorage.setItem('loged_member_icon', localStorage.getItem("image_id member 2"));
-  localStorage.setItem('loged_member_name', localStorage.getItem("name member 2"));}
+  localStorage.setItem('loged_member_name', localStorage.getItem("name member 2"));
+  window.location.href="http://127.0.0.1:5500/mainpage";}
 function log3(){
   console.log("log3");
   localStorage.setItem('loged_member', localStorage.getItem("id member 3"));
   localStorage.setItem('loged_member_icon', localStorage.getItem("image_id member 3"));
-  localStorage.setItem('loged_member_name', localStorage.getItem("name member 3"));}
+  localStorage.setItem('loged_member_name', localStorage.getItem("name member 3"));
+  window.location.href="http://127.0.0.1:5500/mainpage";}
 
 
