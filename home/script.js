@@ -49,8 +49,8 @@ else{
         document.getElementById("hide8").style.left = "5px";
         document.getElementById("hide9").style.left = "100px";
 
-        document.getElementById("hide8").src = "/images/" + localStorage.getItem("image_id member 2")+ ".png";
-        document.getElementById("hide9").innerHTML = localStorage.getItem("name member 2");
+        document.getElementById("hide8").src = "/images/" + localStorage.getItem("image_id member 3")+ ".png";
+        document.getElementById("hide9").innerHTML = localStorage.getItem("name member 3");
 
         console.log("ac3 is exist");
       }
@@ -129,6 +129,7 @@ function anmelden () {
               console.log("member "+member_number+" gefunden");
               found = true;
               showProfiles()
+              
               break;
             }
             }
