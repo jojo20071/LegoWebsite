@@ -3,19 +3,19 @@ document.getElementById("logo_member").src = "/images/" + localStorage.getItem("
 console.log("ac1 is exist");
 
 function redirectBack(){
-    window.location.href="http://127.0.0.1:5500/mainpage";
+    window.location.href="https://ses-smartenergysave.netlify.app/mainpage";
 }
 function redirectAddSleep(){
-    window.location.href="http://127.0.0.1:5500/sleep";
+    window.location.href="https://ses-smartenergysave.netlify.app/sleep";
 }
 function redirectAddSmart(){
-    window.location.href="http://127.0.0.1:5500/smart";
+    window.location.href="https://ses-smartenergysave.netlify.app/smart";
 }
 function redMenu(){
-    window.location.href="http://127.0.0.1:5500/settings";}
+    window.location.href="https://ses-smartenergysave.netlify.app/settings";}
 
 function redSetting(){
-        window.location.href="http://127.0.0.1:5500/membersettings";}
+        window.location.href="https://ses-smartenergysave.netlify.app/membersettings";}
 
 function backHome(){
-            window.location.href="http://127.0.0.1:5500/mainpage";}
+            window.location.href="https://ses-smartenergysave.netlify.app/mainpage";}

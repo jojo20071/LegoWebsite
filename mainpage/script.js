@@ -46,9 +46,9 @@ function changeColor2() {
 
 
 function redMenu(){
-    window.location.href="http://127.0.0.1:5500/settings";}
+    window.location.href="https://ses-smartenergysave.netlify.app/settings";}
 
 function redSetting(){
-        window.location.href="http://127.0.0.1:5500/membersettings";}
+        window.location.href="https://ses-smartenergysave.netlify.app/membersettings";}
 function backHome(){
-        window.location.href="http://127.0.0.1:5500/mainpage";}
+        window.location.href="https://ses-smartenergysave.netlify.app/mainpage";}

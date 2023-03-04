@@ -3,10 +3,10 @@
 //3. Optional: put the register button on bottom -20px
 
 function redirect(){
-    window.location.href="http://127.0.0.1:5500/anmelden";
+    window.location.href="https://ses-smartenergysave.netlify.app/anmelden";
 }
 function redirect2(){
-    window.location.href="http://127.0.0.1:5500/home";
+    window.location.href="https://ses-smartenergysave.netlify.app/home";
 }
 function ty() {
   if (document.getElementById("input1").value == "" || document.getElementById("input2").value == "") {
