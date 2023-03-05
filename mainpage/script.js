@@ -33,12 +33,12 @@ function changeColor2() {
         document.getElementById("gerät2").style.backgroundColor = "#3078BA";
         document.getElementById("k2").style.marginLeft = "30px";
         state2 = true;
-        location.assign("http://192.168.178.23/relay/0?turn=toggle");
+        location.assign("http://192.168.178.25/relay/0?turn=toggle");
     } else {
         document.getElementById("gerät2").style.backgroundColor = "#21364A";
         document.getElementById("k2").style.marginLeft = "3px";
         state2 = false;
-        location.assign("http://192.168.178.23/relay/0?turn=toggle");
+        location.assign("http://192.168.178.25/relay/0?turn=toggle");
     }
     
 
