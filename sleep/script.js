@@ -3,7 +3,7 @@ document.getElementById("logo_member").src = "/images/" + localStorage.getItem("
 console.log("ac1 is exist");
 
 function redirectBack(){
-    window.location.href="https://ses-smartenergysave.netlify.app/mettings";
+    window.location.href="https://ses-smartenergysave.netlify.app/settings";
 }
 function redirectAddSleep(){
     window.location.href="https://ses-smartenergysave.netlify.app/sleep";
